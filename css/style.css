@@ -18,16 +18,20 @@
 html {
     font-size: calc(10px + 1vw);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #21243d;
 }
 
 html body a {
-    text-decoration: none;
-    color: black;
+    text-decoration: none;/*Sem linhas nos links*/
+    color: #21243d;
 }
 
-/*========================
-    Formatação da página
-==========================*/
+/*================================
+    Formatação do topo da página
+=================================*/
+header {
+    margin: 0 5vw 3vw;
+}
 
 header nav ul {
     display: flex;
@@ -41,4 +45,58 @@ header nav ul li {
 
 header nav ul li.atual a {
     color: #ff6464;
+}
+
+/*=========================
+    Formatação do conteúdo
+==========================*/
+main.works {
+    margin: 0 30vw 0 30vw;
+}
+
+main.works h1 {
+    font-weight: normal;/*negrito da fonte*/
+    margin: 0 0 0 0;/*espaçamento do título*/
+}
+
+main.works section {
+    border-bottom: 1px solid #e0e0e0;/*Borda da section-apenas na parte de baixo*/
+    padding: 3vw 0 2vw 0;/*espaçamento das section*/ 
+}
+main.works section:last-child {
+    border: none;
+}
+
+main.works section p {
+    margin: 1vw 0 1vw 0;
+}
+
+main.works section p span {
+    color: white;
+    background-color: #ff6464;/*cor de fundo*/
+    border-radius: 20px;/*Para arrendondar o elemento*/
+    padding: 2px 7px 2px 7px;/*entre o elemento e aquilo que está dentro - espaço*/
+    font-weight: bold;
+}
+
+/*========================
+    Formatação de rodapé
+=========================*/
+footer{
+    text-align: center;/*centraliza o texto*/
+    padding: 1vw 0 2vw 0;
+}
+
+footer nav ul {
+    display: flex;/*coloca os elementos um ao lado do outro*/ 
+    justify-content: center;/*alinha os ícones*/
+}
+
+footer nav ul li {
+    margin: 0 10px 5px 10px;/*espaçamento ícone*/ 
+    font-size: 1rem;/*Tamanho do ícone*/
+}
+
+footer nav ul li a span {
+    color: #21243d;
 }
